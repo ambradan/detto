@@ -43,3 +43,34 @@ See [PRINCIPLES.md](PRINCIPLES.md) for details.
 - [LIMITS.md](LIMITS.md) — Known limitations
 - [ROADMAP.md](ROADMAP.md) — Future directions
 - [CONTRIBUTING.md](CONTRIBUTING.md) — How to contribute
+
+---
+
+## Architecture
+
+Detto runs entirely in-browser with external API calls.
+
+| Component | Technology |
+|-----------|------------|
+| Frontend | Lovable (React-based) |
+| ASR | Lovable built-in |
+| LLM | Lovable built-in |
+| TTS | ElevenLabs API |
+
+**Data persistence:** localStorage only (preferences, abbreviations, quick phrases).
+No backend, no accounts, no server-side storage.
+
+**Privacy:** Audio processed via API, not stored. No tracking. No analytics.
+
+---
+
+## Status
+
+Documentation and specifications live here.
+The app is built on Lovable and may be open-sourced later.
+
+---
+
+## License
+
+[MIT](LICENSE)
